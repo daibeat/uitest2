@@ -68,7 +68,7 @@ input {
   font-weight: 400;
   height: 40px;
   width: 51em;
-  padding-left: 2em;
+  padding-left: 3em;
 }
 
 ::placeholder {
@@ -184,6 +184,7 @@ i {
   display: block;
 }
 
+
 /* Mobile nav version*/
 @media (max-width: 768px) {
   .navbar {
@@ -215,7 +216,16 @@ i {
   .dropdown-content a {
     text-align: center;
   }
- 
+  .cancel {
+    position: absolute;
+    right: 0;
+    top: -46.5%;
+    background-color: var(--primary);
+    width: 7.5%;
+    border-radius: 50%;
+    margin: 5.8%;
+    cursor: pointer;
+  }
 }
 
 /* Main Card top content  */
@@ -275,6 +285,9 @@ i {
 }
 @media (min-width: 769px) {
   .slideshow-container-mob {
+    display: none;
+  }
+  .cancel {
     display: none;
   }
 }
@@ -421,14 +434,12 @@ i {
 }
 
 /* Card bottom right1 left-side  */
-.bottom-content-right {
-  max-width: 100%;
-}
+
 .bottom-card-right1 {
   background: white;
   margin-top: 3.125em;
   margin-left: 1.3em;
-  width: 44%;
+  width: 46%;
   height: 35em;
 }
 
@@ -475,7 +486,7 @@ p:last-of-type {
   border-radius: 10px;
   margin-top: 3.125em;
   margin-left: 2.5em;
-  width: 43.5%;
+  width: 46%;
   height: 35em;
 }
 
