@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>UX Engineer Tasks</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Header/Nav  -->
+  <header>
+    <div class="navbar">
+      <img class="logo" src="./images/logo.svg" alt="logo" />
+      <div class="search">
+        <i class="fa fa-search icon"></i>
+        <input type="text" placeholder="Search staff, contacts..." />
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn" onclick="myFunction()">
+          <p id="dropbtn-text">Samantha Jobs<br><span>Ux Designer</span></p>
+          <img class="dropbtn-img" src="https://i.pravatar.cc/40?img=1" alt="profile_img" />
+        </div>
+        <img class="cancel" src="images/cancel.svg" alt="cancel">
+        <div id="myDropdown" class="dropdown-content">
+          <div class="drop-btn-list">
+            <a id="dropbtn-text2" href="#">Samantha Jobs <br><span>Ux Designer</span></a>
+          </div>
+          <hr>
+          <a href="#">Dashboard</a>
+          <hr>
+          <a href="#">Profile</a>
+          <hr>
+          <a id="signout-red" href="#">Sign Out</a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Top  -->
+
+  <main>
+    <h1 id="dashboard-title">Dashboard</h1>
+    <section class="card-top-row">
+      <div class="card-top-item">
+        <img class="badge" src="images/badge.svg">
+        <div class="card-top-item-content">
+          <img src="./images/large.png" alt="profile-icon" />
+          <div class="card-top-title">
+            <h2>62</h2>
+            <h4>Staff</h4>
+          </div>
+        </div>
+      </div>
+      <div class="card-top-item">
+        <div class="card-top-item-content">
+          <img src="./images/large-1.png" alt="profile-icon" />
+          <div class="card-top-title">
+            <h2>8.6</h2>
+            <h4>Average Hours</h4>
+          </div>
+        </div>
+      </div>
+      <div class="card-top-item">
+        <div class="card-top-item-content">
+          <img src="./images/large-2.png" alt="profile-icon" />
+          <div class="card-top-title">
+            <h2>39</h2>
+            <h4>Task Completed</h4>
+          </div>
+        </div>
+      </div>
+      <div id="card-top-item4" class="card-top-item">
+        <div class="card-top-item-content">
+          <img src="./images/large-3.png" alt="profile-icon" />
+          <div class="card-top-title">
+            <h2>83%</h2>
+            <h4>Completion</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Main content Top Mobile-->
+    <!-- Slideshow container -->
+    <div class="slideshow-container-mob">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="card-top-item">
+          <div class="card-top-item-content">
+            <img src="./images/large.png" alt="profile-icon" />
+            <div class="card-top-title">
+              <h2>62</h2>
+              <h4>Staff</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="card-top-item">
+          <div class="card-top-item-content">
+            <img src="./images/large-1.png" alt="profile-icon" />
+            <div class="card-top-title">
+              <h2>8.6</h2>
+              <h4>Average hours</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="card-top-item">
+          <div class="card-top-item-content">
+            <img src="./images/large-2.png" alt="profile-icon" />
+            <div class="card-top-title">
+              <h2>39</h2>
+              <h4>Task Completed</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div id="card-top-item4" class="card-top-item">
+          <div class="card-top-item-content">
+            <img src="./images/large-3.png" alt="profile-icon" />
+            <div class="card-top-title">
+              <h2>83%</h2>
+              <h4>Completion</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+
+    <!-- Main Content Bottom Left  -->
+    <section>
+      <div class="bottom-content">
+        <div class="bottom-content-left">
+          <div class="bottom-card-left1">
+          </div>
+          <div class="bottom-card-left-small">
+            <div class="bottom-card-left2"></div>
+            <div class="bottom-card-left3"></div>
+          </div>
+        </div>
+
+
+        <!-- Main Content Bottom Right  -->
+
+        <div class="bottom-content-right">
+          <div class="bottom-card-right1">
+            <h3>Staff Avg. Hrs.</h3>
+            <hr />
+            <div class="staff-list-item">
+              <img src="https://i.pravatar.cc/40?img=1" alt="profile-image" />
+              <h4>Annette Watson</h4>
+              <p>9.3</p>
+            </div>
+            <div class="staff-list-item">
+              <img src="https://i.pravatar.cc/40?img=2" alt="profile-image" />
+              <h4>Sam Smith</h4>
+              <p>6.5</p>
+            </div>
+            <div class="staff-list-item">
+              <img src="https://i.pravatar.cc/40?img=3" alt="profile-image" />
+              <h4>Ralph Richards</h4>
+              <p>7</p>
+            </div>
+            <div class="staff-list-item">
+              <img src="https://i.pravatar.cc/40?img=4" alt="profile-image" />
+              <h4>Kim Park</h4>
+              <p>8</p>
+            </div>
+            <div class="staff-list-item">
+              <img src="https://i.pravatar.cc/40?img=5" alt="profile-image" />
+              <h4>Aveen Row</h4>
+              <p>8.5</p>
+            </div>
+            <div id="mob-hid" class="staff-list-item">
+              <img src="https://i.pravatar.cc/40?img=6" alt="profile-image" />
+              <h4>Steve Jobs</h4>
+              <p>5</p>
+            </div>
+            <div id="mob-hid" class="staff-list-item">
+              <img src="https://i.pravatar.cc/40?img=7" alt="profile-image" />
+              <h4>Timothy Cook</h4>
+              <p>6.8</p>
+            </div>
+          </div>
+          <div class="bottom-card-right2">
+            <img src="./images/city.png" alt="city" />
+            <h3>Latest News</h3>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
